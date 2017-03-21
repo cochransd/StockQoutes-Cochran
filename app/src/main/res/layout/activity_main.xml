@@ -245,7 +245,10 @@
                 android:background="@drawable/my_white"
                 android:backgroundTint="@drawable/my_white"
                 android:textSize="15sp"
-                android:fontFamily="serif-monospace" />
+                android:fontFamily="serif-monospace"
+                tools:text='"..."'
+                android:textColor="@android:color/background_light"
+                android:textAlignment="center" />
 
             <TextView
                 android:text="TextView"
@@ -258,14 +261,17 @@
                 android:background="@android:color/background_dark" />
 
             <TextView
-                android:text="TextView"
+                android:text='"..."'
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView24"
                 android:padding="4dp"
                 android:textSize="15sp"
                 android:background="@drawable/my_white"
-                android:fontFamily="serif-monospace" />
+                android:fontFamily="serif-monospace"
+                android:textColor="@android:color/background_light"
+                android:textAlignment="center"
+                android:textStyle="normal|bold" />
 
             <TextView
                 android:text="TextView"
@@ -278,7 +284,7 @@
                 android:background="@android:color/background_dark" />
 
             <TextView
-                android:text="TextView"
+                android:text='"..."'
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView27"
@@ -286,7 +292,10 @@
                 android:textSize="15sp"
                 android:background="@drawable/my_white"
                 android:fontFamily="serif-monospace"
-                android:backgroundTint="@drawable/my_white" />
+                android:backgroundTint="@drawable/my_white"
+                android:textColor="@android:color/background_light"
+                android:textAlignment="center"
+                android:textStyle="normal|bold" />
 
             <TextView
                 android:text="TextView"
@@ -299,14 +308,17 @@
                 android:background="@android:color/background_dark" />
 
             <TextView
-                android:text="TextView"
+                android:text='"..."'
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView31"
                 android:padding="4dp"
                 android:textSize="15sp"
                 android:fontFamily="serif-monospace"
-                android:background="@drawable/my_white" />
+                android:background="@drawable/my_white"
+                android:textColor="@android:color/background_light"
+                android:textAlignment="center"
+                android:textStyle="normal|bold" />
 
             <TextView
                 android:text="TextView"
@@ -319,14 +331,17 @@
                 android:background="@android:color/background_dark" />
 
             <TextView
-                android:text="TextView"
+                android:text='"..."'
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView26"
                 android:padding="4dp"
                 android:textSize="15sp"
                 android:fontFamily="serif-monospace"
-                android:background="@drawable/my_white" />
+                android:background="@drawable/my_white"
+                android:textColor="@android:color/background_light"
+                android:textAlignment="center"
+                android:textStyle="normal|bold" />
 
             <TextView
                 android:text="TextView"
@@ -339,14 +354,17 @@
                 android:background="@android:color/background_dark" />
 
             <TextView
-                android:text="TextView"
+                android:text='"..."'
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView28"
                 android:textSize="15sp"
                 android:fontFamily="serif-monospace"
                 android:padding="4dp"
-                android:background="@drawable/my_white" />
+                android:background="@drawable/my_white"
+                android:textColor="@android:color/background_light"
+                android:textAlignment="center"
+                android:textStyle="normal|bold" />
 
         </LinearLayout>
     </LinearLayout>
