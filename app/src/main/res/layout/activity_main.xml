@@ -16,7 +16,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="4dp"
+        android:padding="2dp"
         android:background="@drawable/my_border"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -24,9 +24,10 @@
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="wrap_content"
+            android:layout_width="225dp"
             android:layout_height="match_parent"
-            android:background="@drawable/my_border">
+            android:background="@drawable/my_border"
+            android:padding="4dp">
 
             <TextView
                 android:text="ENTER STOCK SYMBOL:"
@@ -41,7 +42,8 @@
                 android:background="@drawable/my_border"
                 android:="@android:color/holo_blue_bright"
 
-                android:padding="4dp" />
+                android:padding="4dp"
+                android:textAlignment="textEnd" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -53,7 +55,8 @@
 
                 android:typeface="monospace"
                 android:textStyle="normal|bold"
-                android:id="@+id/textView2" />
+                android:id="@+id/textView2"
+                android:padding="4dp" />
 
             <TextView
                 android:text="SYMBOL:"
@@ -67,7 +70,7 @@
                 android:id="@+id/textView3"
                 android:textAlignment="textEnd"
                 android:padding="4dp"
-                android:background="@drawable/my_white" />
+                android:background="@android:color/background_dark" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -91,7 +94,8 @@
                 android:id="@+id/textView5"
                 android:textAlignment="textEnd"
                 tools:text="NAME:"
-                android:padding="4dp" />
+                android:padding="4dp"
+                android:background="@android:color/background_dark" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -116,7 +120,8 @@
                 android:id="@+id/textView7"
                 tools:text="LAST TRADE PRICE:"
                 android:textAlignment="textEnd"
-                android:padding="4dp" />
+                android:padding="4dp"
+                android:background="@android:color/background_dark" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -141,7 +146,8 @@
                 android:textSize="15sp"
                 tools:text="LAST TRADE TIME:"
                 android:textAlignment="textEnd"
-                android:padding="4dp" />
+                android:padding="4dp"
+                android:background="@android:color/background_dark" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -200,7 +206,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/my_border"
-            android:weightSum="1">
+            android:weightSum="1"
+            android:padding="4dp">
 
             <EditText
                 android:layout_width="match_parent"
@@ -220,10 +227,13 @@
                 android:textAlignment="center" />
 
             <TextView
-                android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView21" />
+                android:id="@+id/textView21"
+                android:padding="4dp"
+                android:textSize="15sp"
+                android:background="@android:color/background_dark"
+                android:fontFamily="serif-monospace" />
 
             <TextView
                 android:text="TextView"
@@ -233,89 +243,111 @@
                 android:textStyle="normal|bold"
                 android:padding="4dp"
                 android:background="@drawable/my_white"
-                android:backgroundTint="@android:color/background_light" />
+                android:backgroundTint="@drawable/my_white"
+                android:textSize="15sp"
+                android:fontFamily="serif-monospace" />
 
             <TextView
                 android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView23" />
+                android:id="@+id/textView23"
+                android:padding="4dp"
+                android:textSize="15sp"
+                android:fontFamily="serif-monospace"
+                android:background="@android:color/background_dark" />
 
             <TextView
                 android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView24"
-                android:padding="4dp" />
+                android:padding="4dp"
+                android:textSize="15sp"
+                android:background="@drawable/my_white"
+                android:fontFamily="serif-monospace" />
 
             <TextView
                 android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView25" />
+                android:id="@+id/textView25"
+                android:padding="4dp"
+                android:textSize="15sp"
+                android:fontFamily="serif-monospace"
+                android:background="@android:color/background_dark" />
 
             <TextView
                 android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView27"
-                android:padding="4dp" />
+                android:padding="4dp"
+                android:textSize="15sp"
+                android:background="@drawable/my_white"
+                android:fontFamily="serif-monospace"
+                android:backgroundTint="@drawable/my_white" />
 
             <TextView
                 android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView29" />
+                android:id="@+id/textView29"
+                android:padding="4dp"
+                android:textSize="15sp"
+                android:fontFamily="serif-monospace"
+                android:background="@android:color/background_dark" />
 
             <TextView
                 android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView31"
-                android:padding="4dp" />
+                android:padding="4dp"
+                android:textSize="15sp"
+                android:fontFamily="serif-monospace"
+                android:background="@drawable/my_white" />
 
             <TextView
                 android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView30" />
+                android:id="@+id/textView30"
+                android:padding="4dp"
+                android:textSize="15sp"
+                android:fontFamily="serif-monospace"
+                android:background="@android:color/background_dark" />
 
             <TextView
                 android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView26"
-                android:padding="4dp" />
+                android:padding="4dp"
+                android:textSize="15sp"
+                android:fontFamily="serif-monospace"
+                android:background="@drawable/my_white" />
 
             <TextView
                 android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView32" />
+                android:id="@+id/textView32"
+                android:padding="4dp"
+                android:textSize="15sp"
+                android:fontFamily="serif-monospace"
+                android:background="@android:color/background_dark" />
 
             <TextView
                 android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView28" />
+                android:id="@+id/textView28"
+                android:textSize="15sp"
+                android:fontFamily="serif-monospace"
+                android:padding="4dp"
+                android:background="@drawable/my_white" />
 
-            <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView34" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView33" />
-
-            <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView20" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
