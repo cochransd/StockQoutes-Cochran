@@ -48,16 +48,6 @@ public class MainActivity extends AppCompatActivity {
 
         Thread thread = new Thread(){
 
-            public void update(View v, TextView txt15, Stock stock) {
-
-                txt15.setText(stock.getName().toString());
-
-
-                Log.d("VIVZ", txt15.toString());
-
-            }
-
-
             @Override
 
             public void run() {
@@ -75,9 +65,8 @@ public class MainActivity extends AppCompatActivity {
                         System.out.println(line);
 
                         if(stock.getSymbol() != null){
-                            System.out.println("FART");
+                            System.out.println("FA");
 
-                            txt15.setText("FART");
                             update(tv, txt15, stock);
                         }
 
@@ -88,8 +77,19 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
+
+
         thread.start();}
 
+
+    public void update(View v, TextView txt15, Stock stock) {
+
+        txt15.setText(stock.getName().toString());
+
+
+        Log.d("VIVZ", txt15.toString());
+
+    }
 }
 
 
