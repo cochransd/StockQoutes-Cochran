@@ -43,7 +43,10 @@
                 android:="@android:color/holo_blue_bright"
 
                 android:padding="4dp"
-                android:textAlignment="textEnd" />
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+
+                />
 
             <TextView
                 android:layout_width="match_parent"
@@ -51,8 +54,6 @@
                 android:fontFamily="serif-monospace"
                 android:textSize="15sp"
                 android:textColor="@android:color/holo_blue_bright"
-                androidColor="@android:color/holo_blue_bright"
-
                 android:typeface="monospace"
                 android:textStyle="normal|bold"
                 android:id="@+id/textView2"
@@ -69,6 +70,8 @@
                 android:textStyle="normal|bold"
                 android:id="@+id/textView3"
                 android:textAlignment="textEnd"
+                android:layout_gravity="end"
+
                 android:padding="4dp"
                 android:background="@android:color/background_dark" />
 
@@ -93,6 +96,8 @@
                 android:textStyle="normal|bold"
                 android:id="@+id/textView5"
                 android:textAlignment="textEnd"
+                android:layout_gravity="end"
+
                 tools:text="NAME:"
                 android:padding="4dp"
                 android:background="@android:color/background_dark" />
@@ -120,6 +125,8 @@
                 android:id="@+id/textView7"
                 tools:text="LAST TRADE PRICE:"
                 android:textAlignment="textEnd"
+                android:layout_gravity="end"
+
                 android:padding="4dp"
                 android:background="@android:color/background_dark" />
 
@@ -146,6 +153,8 @@
                 android:textSize="15sp"
                 tools:text="LAST TRADE TIME:"
                 android:textAlignment="textEnd"
+                android:layout_gravity="end"
+
                 android:padding="4dp"
                 android:background="@android:color/background_dark" />
 
@@ -172,6 +181,8 @@
                 android:textSize="15sp"
                 tools:text="CHANGE:"
                 android:textAlignment="textEnd"
+                android:layout_gravity="end"
+
                 android:padding="4dp" />
 
             <TextView
@@ -197,6 +208,7 @@
                 android:textSize="15sp"
                 tools:text="52 WEEK RANGE:"
                 android:textAlignment="textEnd"
+                android:layout_gravity="end"
                 android:padding="4dp" />
 
         </LinearLayout>
