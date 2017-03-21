@@ -8,10 +8,314 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="steve_cochran.stockqoutes_cochran.MainActivity">
+    tools:context="steve_cochran.stockqoutes_cochran.MainActivity"
+    android:background="@android:color/background_dark"
+    android:backgroundTint="@drawable/my_border">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:background="@drawable/my_border"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/my_border">
+
+            <TextView
+                android:text="ENTER STOCK SYMBOL:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:textSize="15sp"
+                android:textColor="@android:color/background_light"
+                android:typeface="monospace"
+                android:textStyle="normal|bold"
+                android:id="@+id/textView1"
+                android:background="@drawable/my_border"
+                android:="@android:color/holo_blue_bright"
+
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_bright"
+                androidColor="@android:color/holo_blue_bright"
+
+                android:typeface="monospace"
+                android:textStyle="normal|bold"
+                android:id="@+id/textView2" />
+
+            <TextView
+                android:text="SYMBOL:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:textSize="15sp"
+                android:textColor="@android:color/background_light"
+                android:typeface="monospace"
+                android:textStyle="normal|bold"
+                android:id="@+id/textView3"
+                android:textAlignment="textEnd"
+                android:padding="4dp"
+                android:background="@drawable/my_white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_bright"
+                android:typeface="monospace"
+                android:textStyle="normal|bold"
+                android:id="@+id/textView4"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:textSize="15sp"
+                android:textColor="@android:color/background_light"
+                android:typeface="monospace"
+                android:textStyle="normal|bold"
+                android:id="@+id/textView5"
+                android:textAlignment="textEnd"
+                tools:text="NAME:"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_bright"
+                android:typeface="monospace"
+                android:textStyle="normal|bold"
+                android:id="@+id/textView6"
+                android:padding="4dp" />
+
+            <TextView
+                android:text="ENTER STOCK SYMBOL:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:textSize="15sp"
+                android:textColor="@android:color/background_light"
+                android:typeface="monospace"
+                android:textStyle="normal|bold"
+                android:id="@+id/textView7"
+                tools:text="LAST TRADE PRICE:"
+                android:textAlignment="textEnd"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:textSize="15sp"
+                android:textColor="@android:color/holo_blue_bright"
+                android:typeface="monospace"
+                android:textStyle="normal|bold"
+                android:id="@+id/textView8"
+                android:padding="4dp" />
+
+            <TextView
+                android:text="ENTER STOCK SYMBOL:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:textColor="@android:color/background_light"
+                android:typeface="monospace"
+                android:textStyle="normal|bold"
+                android:id="@+id/textView9"
+                android:textSize="15sp"
+                tools:text="LAST TRADE TIME:"
+                android:textAlignment="textEnd"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:textColor="@android:color/holo_blue_bright"
+                android:typeface="monospace"
+                android:textStyle="normal|bold"
+                android:id="@+id/textView10"
+                android:textSize="15sp"
+                android:padding="4dp" />
+
+            <TextView
+                android:text="ENTER STOCK SYMBOL:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:textColor="@android:color/background_light"
+                android:typeface="monospace"
+                android:textStyle="normal|bold"
+                android:id="@+id/textView11"
+                android:textSize="15sp"
+                tools:text="CHANGE:"
+                android:textAlignment="textEnd"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:textColor="@android:color/holo_blue_bright"
+                android:typeface="monospace"
+                android:textStyle="normal|bold"
+                android:id="@+id/textView12"
+                android:textSize="15sp"
+                android:padding="4dp" />
+
+            <TextView
+                android:text="ENTER STOCK SYMBOL:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif-monospace"
+                android:textColor="@android:color/background_light"
+                android:typeface="monospace"
+                android:textStyle="normal|bold"
+                android:id="@+id/textView13"
+                android:textSize="15sp"
+                tools:text="52 WEEK RANGE:"
+                android:textAlignment="textEnd"
+                android:padding="4dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/my_border"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:ems="10"
+                android:id="@+id/editText"
+                tools:text='"..."'
+                android:background="@drawable/my_border"
+                android:padding="4dp"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+                android:textColor="@android:color/white"
+                android:textStyle="normal|bold"
+                android:fontFamily="serif-monospace"
+                android:textSize="15dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView21" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView22"
+                android:textStyle="normal|bold"
+                android:padding="4dp"
+                android:background="@drawable/my_white"
+                android:backgroundTint="@android:color/background_light" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView23" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView24"
+                android:padding="4dp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView25" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView27"
+                android:padding="4dp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView29" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView31"
+                android:padding="4dp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView30" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView26"
+                android:padding="4dp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView32" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView28" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView34" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView33" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView20" />
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>
