@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     TextView output4;
     TextView output5;
     TextView output6;
-    String STOCK_SYMBOL;
+    String strSTOCK;
     Stock stockData;
     getStockInfo aTask;
     Context ACTIVITY_CONTEXT;
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         getStock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                STOCK_SYMBOL = stockInput.getText().toString();
+                strSTOCK = stockInput.getText().toString();
 
                 System.out.println("Ok1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
     private class getStockInfo extends AsyncTask<Void, Void, Boolean> {
         protected Boolean doInBackground(Void... params) {
-            stockData = new Stock(STOCK_SYMBOL);
+            stockData = new Stock(strSTOCK);
             try {stockData.load();} catch (IOException | IndexOutOfBoundsException e) { e.printStackTrace();}
             return true;
 
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
             output4.setText(stockData.getLastTradeTime());
             output5.setText(stockData.getChange());
             output6.setText(stockData.getRange());
-            
+
         }
 
         @Override
