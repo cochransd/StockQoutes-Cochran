@@ -1,97 +1,124 @@
 package steve_cochran.stockqoutes_cochran;
 
+import android.content.Context;
 import android.os.AsyncTask;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.params.BasicHttpParams;
-import org.apache.http.params.HttpConnectionParams;
-import org.apache.http.params.HttpParams;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.io.IOException;
 
 import static java.lang.Thread.sleep;
-import static steve_cochran.stockqoutes_cochran.R.id.editText;
 
 public class MainActivity extends AppCompatActivity {
 
+    EditText stockInput;
+    TextView output1;
+    TextView output2;
+    TextView output3;
+    TextView output4;
+    TextView output5;
+    TextView output6;
+    String STOCK_SYMBOL;
+    Stock stockData;
+    getStockInfo aTask;
+    Context ACTIVITY_CONTEXT;
 
-    public android.view.View tv;
-    public TextView txt15;
-
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Handler handler = new Handler();
-        tv = findViewById( R.id.textView15);
-        txt15 = (TextView)findViewById(R.id.textView15);
+        stockInput = (EditText) findViewById(R.id.editText);
+        Button getStock = (Button) findViewById(R.id.button);
+        output1 = (TextView) findViewById(R.id.output1);
+        output2 = (TextView) findViewById(R.id.output2);
+        output3 = (TextView) findViewById(R.id.output3);
+        output4 = (TextView) findViewById(R.id.output4);
+        output5 = (TextView) findViewById(R.id.output5);
+        output6 = (TextView) findViewById(R.id.output6);
+
+        ACTIVITY_CONTEXT = this;
+
+        System.out.println("Ok0");
 
 
-        TextView txt15 = (TextView) findViewById(R.id.textView15);
+        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-        EditText editText = (EditText) findViewById(R.id.editText);
-
-        Thread thread = new Thread(){
-
+        getStock.setOnClickListener(new View.OnClickListener() {
             @Override
+            public void onClick(View view) {
+                STOCK_SYMBOL = stockInput.getText().toString();
 
-            public void run() {
+                System.out.println("Ok1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
-                try {
-                    while(true) {
-                        sleep(1000);
-                        TextView txt = (TextView) findViewById(R.id.editText);
+                aTask = new getStockInfo();
+                aTask.execute((Void) null);
 
-                        TextView txt15 = (TextView) findViewById(R.id.textView15);
+                System.out.println("Ok2");
 
-                        String line = txt.getText().toString();
-                        Stock stock = new Stock(line);
-
-                        System.out.println(line);
-
-                        if(stock.getSymbol() != null){
-                            System.out.println("FA");
-
-                            update(tv, txt15, stock);
-                        }
-
-                    }
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
             }
-        };
+        });
 
-
-
-        thread.start();}
-
-
-    public void update(View v, TextView txt15, Stock stock) {
-
-        txt15.setText(stock.getName().toString());
-
-
-        Log.d("VIVZ", txt15.toString());
+        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     }
-}
 
+    //00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+    private class getStockInfo extends AsyncTask<Void, Void, Boolean> {
+        protected Boolean doInBackground(Void... params) {
+            stockData = new Stock(STOCK_SYMBOL);
+            try {stockData.load();} catch (IOException | IndexOutOfBoundsException e) { e.printStackTrace();}
+            return true;
+
+
+        }
+
+        //Handles everything after the Async task has completed
+        protected void onPostExecute(Boolean value) {
+            aTask = null;
+
+            System.out.println(stockData.getName());
+            System.out.println(stockData.getLastTradePrice());
+            System.out.println(stockData.getLastTradeTime());
+            System.out.println(stockData.getChange());
+            System.out.println(stockData.getName());
+
+
+            output1.setText(stockData.getSymbol());
+            output2.setText(stockData.getName());
+            output3.setText(stockData.getLastTradePrice());
+            output4.setText(stockData.getLastTradeTime());
+            output5.setText(stockData.getChange());
+            output6.setText(stockData.getRange());
+            
+        }
+
+        @Override
+        protected void onCancelled() {
+            aTask = null;
+        }
+    }
+
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putString("output1", output1.getText().toString());
+        savedInstanceState.putString("output2", output2.getText().toString());
+        savedInstanceState.putString("output3", output3.getText().toString());
+        savedInstanceState.putString("output4", output4.getText().toString());
+        savedInstanceState.putString("output5", output5.getText().toString());
+        savedInstanceState.putString("output6", output6.getText().toString());
+
+    }
+
+
+
+}
 
 
 

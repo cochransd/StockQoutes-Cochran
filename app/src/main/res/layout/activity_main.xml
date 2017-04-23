@@ -20,197 +20,143 @@
         android:background="@android:color/background_light">
 
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="241dp"
-            android:layout_height="match_parent"
-            android:padding="4dp"
             android:id="@+id/LL1"
-            android:background="@android:color/transparent">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:padding="4dp">
 
             <TextView
 
-                android:text="ENTER STOCK SYMBOL:"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="serif-monospace"
-                android:textSize="15sp"
-                android:textColor="@android:color/background_light"
-                android:typeface="monospace"
-                android:textStyle="normal|bold"
                 android:id="@+id/textView1"
-
-                android:padding="4dp"
-                android:textAlignment="textEnd"
-                android:layout_gravity="end"
-
-                android:background="@android:color/holo_blue_dark" />
-
-            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@android:color/holo_blue_dark"
                 android:fontFamily="serif-monospace"
-                android:textSize="15sp"
+                android:padding="4dp"
+                android:text="ENTER STOCK SYMBOL:"
+                android:textAlignment="textEnd"
+
                 android:textColor="@android:color/background_light"
-                android:typeface="monospace"
+                android:textSize="15sp"
                 android:textStyle="normal|bold"
+
+                android:typeface="monospace" />
+
+            <TextView
                 android:id="@+id/textView2"
-                android:padding="4dp"
-                android:background="@color/colorPrimaryDark" />
-
-            <TextView
-                android:text="SYMBOL:"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
                 android:fontFamily="serif-monospace"
-                android:textSize="15sp"
+                android:padding="4dp"
                 android:textColor="@android:color/background_light"
-                android:typeface="monospace"
+                android:textSize="15sp"
                 android:textStyle="normal|bold"
+                android:typeface="monospace" />
+
+            <TextView
                 android:id="@+id/textView3"
-                android:textAlignment="textEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="end"
-
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="serif-monospace"
                 android:padding="4dp"
-                android:background="@color/colorPrimaryDark" />
+                android:text="SYMBOL:"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_light"
+                android:textSize="15sp"
+
+                android:textStyle="normal|bold"
+                android:typeface="monospace" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="serif-monospace"
-                android:textSize="15sp"
-                android:textColor="@android:color/background_light"
-                android:typeface="monospace"
-                android:textStyle="normal|bold"
-                android:id="@+id/textView4"
-                android:padding="4dp"
-                android:background="@color/colorPrimaryDark" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="serif-monospace"
-                android:textSize="15sp"
-                android:textColor="@android:color/background_light"
-                android:typeface="monospace"
-                android:textStyle="normal|bold"
                 android:id="@+id/textView5"
-                android:textAlignment="textEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="end"
-
-                android:padding="4dp"
                 android:background="@color/colorPrimaryDark"
-                android:text="NAME:" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:fontFamily="serif-monospace"
-                android:textSize="15sp"
-                android:textColor="@android:color/holo_blue_bright"
-                android:typeface="monospace"
-                android:textStyle="normal|bold"
-                android:id="@+id/textView6"
                 android:padding="4dp"
-                android:background="@color/colorPrimaryDark" />
+                android:text="NAME:"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_light"
+
+                android:textSize="15sp"
+                android:textStyle="normal|bold"
+                android:typeface="monospace" />
 
             <TextView
-                android:text="LAST TRADE PRICE:"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="serif-monospace"
-                android:textSize="15sp"
-                android:textColor="@android:color/background_light"
-                android:typeface="monospace"
-                android:textStyle="normal|bold"
                 android:id="@+id/textView7"
-                android:textAlignment="textEnd"
-                android:layout_gravity="end"
-
-                android:padding="4dp"
-                android:background="@color/colorPrimaryDark" />
-
-            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="serif-monospace"
-                android:textSize="15sp"
-                android:textColor="@android:color/holo_blue_bright"
-                android:typeface="monospace"
-                android:textStyle="normal|bold"
-                android:id="@+id/textView8"
-                android:padding="4dp"
-                android:background="@color/colorPrimaryDark" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="serif-monospace"
-                android:textColor="@android:color/background_light"
-                android:typeface="monospace"
-                android:textStyle="normal|bold"
-                android:id="@+id/textView9"
-                android:textSize="15sp"
-                android:textAlignment="textEnd"
                 android:layout_gravity="end"
-
-                android:padding="4dp"
                 android:background="@color/colorPrimaryDark"
-                android:text="LAST TRADE TIME:" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:fontFamily="serif-monospace"
-                android:textColor="@color/colorPrimaryDark"
-                android:typeface="monospace"
-                android:textStyle="normal|bold"
-                android:id="@+id/textView10"
-                android:textSize="15sp"
                 android:padding="4dp"
-                android:background="@color/colorPrimaryDark" />
+                android:text="LAST TRADE PRICE:"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_light"
+                android:textSize="15sp"
+
+                android:textStyle="normal|bold"
+                android:typeface="monospace" />
 
             <TextView
-                android:text="CHANGE:"
+                android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@color/colorPrimaryDark"
                 android:fontFamily="serif-monospace"
+                android:padding="4dp"
+                android:text="LAST TRADE TIME:"
+                android:textAlignment="textEnd"
                 android:textColor="@android:color/background_light"
-                android:typeface="monospace"
+
+                android:textSize="15sp"
                 android:textStyle="normal|bold"
+                android:typeface="monospace" />
+
+            <TextView
                 android:id="@+id/textView11"
-                android:textSize="15sp"
-                android:textAlignment="textEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="end"
-
-                android:padding="4dp"
-                android:background="@color/colorPrimaryDark" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
                 android:fontFamily="serif-monospace"
-                android:textColor="@android:color/holo_blue_bright"
-                android:typeface="monospace"
-                android:textStyle="normal|bold"
-                android:id="@+id/textView12"
-                android:textSize="15sp"
                 android:padding="4dp"
-                android:background="@color/colorPrimaryDark" />
-
-            <TextView
-                android:text="52 WEEK RANGE:"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="serif-monospace"
+                android:text="CHANGE:"
+                android:textAlignment="textEnd"
                 android:textColor="@android:color/background_light"
-                android:typeface="monospace"
-                android:textStyle="normal|bold"
-                android:id="@+id/textView13"
                 android:textSize="15sp"
-                android:textAlignment="textEnd"
+
+                android:textStyle="normal|bold"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="end"
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="serif-monospace"
                 android:padding="4dp"
-                android:background="@color/colorPrimaryDark" />
+                android:text="52 WEEK RANGE:"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_light"
+                android:textSize="15sp"
+                android:textStyle="normal|bold"
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
 
         </LinearLayout>
 
@@ -250,7 +196,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView15"
+                android:id="@+id/output1"
                 android:textStyle="normal|bold"
                 android:padding="4dp"
                 android:textSize="15sp"
@@ -263,16 +209,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView16"
-                android:padding="4dp"
-                android:textSize="15sp"
-                android:fontFamily="serif-monospace"
-                android:background="@color/colorPrimaryDark" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView17"
+                android:id="@+id/output2"
                 android:padding="4dp"
                 android:textSize="15sp"
                 android:fontFamily="serif-monospace"
@@ -284,16 +221,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView18"
-                android:padding="4dp"
-                android:textSize="15sp"
-                android:fontFamily="serif-monospace"
-                android:background="@color/colorPrimaryDark" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView19"
+                android:id="@+id/output3"
                 android:padding="4dp"
                 android:textSize="15sp"
                 android:fontFamily="serif-monospace"
@@ -305,16 +233,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView20"
-                android:padding="4dp"
-                android:textSize="15sp"
-                android:fontFamily="serif-monospace"
-                android:background="@color/colorPrimaryDark" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView21"
+                android:id="@+id/output4"
                 android:padding="4dp"
                 android:textSize="15sp"
                 android:fontFamily="serif-monospace"
@@ -326,17 +245,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView22"
-                android:padding="4dp"
-                android:textSize="15sp"
-                android:fontFamily="serif-monospace"
-                android:background="@color/colorPrimaryDark"
-                android:elevation="0dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView23"
+                android:id="@+id/output5"
                 android:padding="4dp"
                 android:textSize="15sp"
                 android:fontFamily="serif-monospace"
@@ -348,16 +257,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView24"
-                android:padding="4dp"
-                android:textSize="15sp"
-                android:fontFamily="serif-monospace"
-                android:background="@color/colorPrimaryDark" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView25"
+                android:id="@+id/output6"
                 android:textSize="15sp"
                 android:fontFamily="serif-monospace"
                 android:padding="4dp"
